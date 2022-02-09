@@ -19,7 +19,7 @@ projects.forEach(({ name, github }, i) => {
 	const listItem = document.createElement('li');
 
 	listItem.innerHTML = `
-		<a href="./${name}/index.html">
+		<a href="/${name}/index.html">
 			<img src="${name}/design/desktop-design.jpg" alt="${name}" />
 			<p>${i + 1}. ${formatProjectName(name)}</p>
 		</a>
