@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+$grayish-blue:hsl(233, 13%, 49%);
+$dark-grayish-blue:hsl(232, 13%, 33%);
+$light-grayish-blue:hsl(234, 14%, 74%);
+$very-light-grayish-blue:hsl(240, 78%, 98%);
+$white:#fff;
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+body{
+    background-color: hsl(240, 78%, 98%);
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+        &::before{
+        content: '';
+        position: absolute;
+        right:0;
+        top:0;
+        background-image: url(/images/bg-top.svg);
+        width:50%;
+        float: right;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-position: right;
+        z-index: -1;
+
+    }
+    &::after{
+        content: '';
+        position: absolute;
+        left:0;
+        bottom:0;
+        background-image: url(/images/bg-bottom.svg);
+        width:50%;
+        float: left;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-position-x: 0;
+        z-index: -1;
+
+    }
+}
+.mainheading{
+    text-align: center;
+    padding:30px 0 20px 0;
+    width: 100%;
+    font-size: 34px;
+    font-weight: 700;
+    color:$grayish-blue
+}
+.container{
+    max-width: 90%;
+    margin: 0 auto;
+}
+.toggler{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    input[type=checkbox]{
+        height: 0;
+        width: 0;
+        visibility: hidden;
+    }
+    
+    label {
+        cursor: pointer;
+        text-indent: -9999px;
+        width: 70px;
+        height: 30px;
+        background: grey;
+        display: inline-block;
+        border-radius: 100px;
+        position: relative;
+        margin: 0 20px;
+
+    }
+    
+    label:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width:30px;
+        height: 30px;
+        background: #fff;
+        border-radius: 90px;
+        transition: 0.3s;
+    }
+    
+    input:checked + label {
+        background: linear-gradient(
+            90deg
+            , hsl(236, 72%, 79%), hsl(237, 63%, 64%));    }
+    
+    input:checked + label:after {
+        left: calc(100% - 2px);
+        transform: translateX(-100%);
+        
+    }
+    
+    label:active:after {
+        width: 130px;
+    }
+    
+
+}
+.fullwidth{
+    width: 100%;
+    display: block;
+    float: left
+}
+.subtext{
+    color:$light-grayish-blue;
+    font-weight: 700;
+}
+
+main{
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+    max-width: 90%;
+    margin:30px auto 50px auto;
+}
+.priceCard{
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:30px;
+    width: calc(100%/3);
+    box-shadow: 0 8px 32px -4px #a3a8f066;
+    height: 450px;
+    border-radius: 10px;
+    &.middle{   
+        height: 500px;
+        background: linear-gradient(90deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+        *{
+            color: $white;
+        }
+        .morebtn{
+            background: $white;
+            color: hsl(237, 63%, 64%);
+        }
+        h2,p{
+            border-bottom: 1px solid $white;
+        }
+    }
+    &:first-child{
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    &:last-child{
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+    h3{
+        color: $grayish-blue;
+        font-size: 20px;
+    }
+    h2{
+        color: $dark-grayish-blue;
+        font-size: 70px;
+        padding: 20px 0;
+        border-bottom: 1px solid $light-grayish-blue;
+
+    }
+    p{
+        color: $grayish-blue;
+        font-size: 16px;
+        padding:20px 0;
+        border-bottom: 1px solid $light-grayish-blue;
+        font-weight: 600;
+
+    }
+    
+    *{
+        width: 100%;
+        text-align: center;
+    }
+    .morebtn{
+        background: linear-gradient(90deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+        border: none;
+        padding:15px 0;
+        font-size: 18px;
+        color: $white;
+        font-weight: 700;
+        font-family: 'Montserrat', sans-serif;
+        border-radius: 5px;
+        margin-top: 30px;
+        cursor: pointer;
+        
+    }
+}
+.anually{
+    display: none;
+}
+
+.show-anually{
+    .anually{
+        display: block;
+    }
+    .monthly{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    main{
+        flex-direction: column;
+    }
+    .priceCard{
+        width: 90%;
+        border-radius: 5px;
+        margin-bottom: 30px;
+        &:first-child,&:last-child{
+            border-radius: 5px;
+        }
+    }
+}

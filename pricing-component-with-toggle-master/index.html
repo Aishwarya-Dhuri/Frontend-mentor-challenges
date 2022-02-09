@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <title>Pricing Component with Toggle Master</title>
+  <link rel="stylesheet" href="/css/style.css">
+  
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="mainheading ">Our Pricing</h1>
+      <div class="toggler">
+        <span class="subtext">Annually</span>
+        <input type="checkbox" id="toggle" checked />
+        <label for="toggle">Toggle</label>
+        <span class="subtext">Monthly</span> 
+      </div>
+    </div>
+  </header>
+
+  <main id="cardsec">
+        <div class="priceCard">
+            <h3>Basic</h3>
+            <h2 class="monthly">$99</h2>
+            <h2 class="anually">$399</h2>
+
+            <p>500 GB Storage</p>
+            <p>2 Users Allowed</p>
+            <p>Send up to 3 GB</p>
+            <button class="morebtn">Learn More</button>
+        </div>
+        <div class="priceCard middle">
+          <h3>Professional</h3>
+          <h2 class="monthly">$199</h2>
+          <h2 class="anually">$699</h2>
+
+          <p>1 TB Storage</p>
+          <p>5 Users Allowed</p>
+          <p>Send up to 10 GB</p>
+          <button class="morebtn">Learn More</button>
+      </div>
+        <div class="priceCard">
+          <h3>Master</h3>
+          <h2 class="monthly">$699</h2>
+          <h2 class="anually">$1999</h2>
+
+          <p>2 TB Storage</p>
+          <p>10 Users allowed</p>
+          <p>Send up to 20 GB    </p>
+          <button class="morebtn">Learn More</button>
+        </div>
+  </main>
+  
+  <script>
+    const toggle = document.getElementById("toggle");
+    const mainsec = document.getElementById("cardsec");
+
+    toggle.addEventListener("change",()=>{
+        mainsec.classList.toggle("show-anually");
+    })
+  </script>
+</body>
+</html>

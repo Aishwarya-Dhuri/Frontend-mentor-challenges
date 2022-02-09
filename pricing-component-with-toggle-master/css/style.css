@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+body {
+  background-color: #f6f6fe;
+  min-height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-image: url(/images/bg-top.svg);
+  width: 50%;
+  float: right;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: right;
+  z-index: -1;
+}
+
+body::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-image: url(/images/bg-bottom.svg);
+  width: 50%;
+  float: left;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-position-x: 0;
+  z-index: -1;
+}
+
+.mainheading {
+  text-align: center;
+  padding: 30px 0 20px 0;
+  width: 100%;
+  font-size: 34px;
+  font-weight: 700;
+  color: #6d708d;
+}
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.toggler {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.toggler input[type=checkbox] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+.toggler label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 70px;
+  height: 30px;
+  background: grey;
+  display: inline-block;
+  border-radius: 100px;
+  position: relative;
+  margin: 0 20px;
+}
+
+.toggler label:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  border-radius: 90px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.toggler input:checked + label {
+  background: -webkit-gradient(linear, left top, right top, from(#a3a8f0), to(#696fdd));
+  background: linear-gradient(90deg, #a3a8f0, #696fdd);
+}
+
+.toggler input:checked + label:after {
+  left: calc(100% - 2px);
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+.toggler label:active:after {
+  width: 130px;
+}
+
+.fullwidth {
+  width: 100%;
+  display: block;
+  float: left;
+}
+
+.subtext {
+  color: #b3b5c6;
+  font-weight: 700;
+}
+
+main {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 90%;
+  margin: 30px auto 50px auto;
+}
+
+.priceCard {
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px;
+  width: calc(100%/3);
+  -webkit-box-shadow: 0 8px 32px -4px #a3a8f066;
+          box-shadow: 0 8px 32px -4px #a3a8f066;
+  height: 450px;
+  border-radius: 10px;
+}
+
+.priceCard.middle {
+  height: 500px;
+  background: -webkit-gradient(linear, left top, right top, from(#a3a8f0), to(#696fdd));
+  background: linear-gradient(90deg, #a3a8f0, #696fdd);
+}
+
+.priceCard.middle * {
+  color: #fff;
+}
+
+.priceCard.middle .morebtn {
+  background: #fff;
+  color: #696fdd;
+}
+
+.priceCard.middle h2, .priceCard.middle p {
+  border-bottom: 1px solid #fff;
+}
+
+.priceCard:first-child {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.priceCard:last-child {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.priceCard h3 {
+  color: #6d708d;
+  font-size: 20px;
+}
+
+.priceCard h2 {
+  color: #494c5f;
+  font-size: 70px;
+  padding: 20px 0;
+  border-bottom: 1px solid #b3b5c6;
+}
+
+.priceCard p {
+  color: #6d708d;
+  font-size: 16px;
+  padding: 20px 0;
+  border-bottom: 1px solid #b3b5c6;
+  font-weight: 600;
+}
+
+.priceCard * {
+  width: 100%;
+  text-align: center;
+}
+
+.priceCard .morebtn {
+  background: -webkit-gradient(linear, left top, right top, from(#a3a8f0), to(#696fdd));
+  background: linear-gradient(90deg, #a3a8f0, #696fdd);
+  border: none;
+  padding: 15px 0;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 5px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.anually {
+  display: none;
+}
+
+.show-anually .anually {
+  display: block;
+}
+
+.show-anually .monthly {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .priceCard {
+    width: 90%;
+    border-radius: 5px;
+    margin-bottom: 30px;
+  }
+  .priceCard:first-child, .priceCard:last-child {
+    border-radius: 5px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
