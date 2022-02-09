@@ -2,12 +2,12 @@ const projects = [
 	{
 		name: 'pricing-toggle-component',
 		github:
-			'https://www.youtube.com/watch?v=NBkD-O7f4Bs&list=PLgBH1CvjOA63Xvt0BaeQ7zL4KXX96Wbgp&index=11&t=0s'
+			'https://github.com/Aishwarya-Dhuri/Frontend-mentor-challenges/tree/master/pricing-toggle-component'
 	},
     {
-		name: 'countries-restApi-Jsapp',
+		name: 'Countries-RestApi-JsApp',
 		github:
-			'https://www.youtube.com/watch?v=NBkD-O7f4Bs&list=PLgBH1CvjOA63Xvt0BaeQ7zL4KXX96Wbgp&index=11&t=0s'
+			'https://github.com/Aishwarya-Dhuri/Frontend-mentor-challenges/tree/master/Countries-RestApi-JsApp'
 	},
     
 	
@@ -27,8 +27,8 @@ projects.forEach(({ name, github }, i) => {
 			<a href="./${name}/index.html" class="blue">
 				<i class="fas fa-eye"></i>
 			</a>
-			<a href="${github}" class="youtube">
-				<i class="fab fa-youtube"></i>
+			<a href="${github}" class="github">
+				<i class="fab fa-github"></i>
 			</a>
 		</div>
 	`;
