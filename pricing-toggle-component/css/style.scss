@@ -18,7 +18,7 @@ body{
         position: absolute;
         right:0;
         top:0;
-        background-image: url(/images/bg-top.svg);
+        background-image: url(../images/bg-top.svg);
         width:50%;
         float: right;
         height: 100%;
@@ -32,7 +32,7 @@ body{
         position: absolute;
         left:0;
         bottom:0;
-        background-image: url(/images/bg-bottom.svg);
+        background-image: url(../images/bg-bottom.svg);
         width:50%;
         float: left;
         height: 100%;
@@ -71,7 +71,7 @@ body{
         text-indent: -9999px;
         width: 70px;
         height: 30px;
-        background: grey;
+        background-image: linear-gradient( to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%) );
         display: inline-block;
         border-radius: 100px;
         position: relative;

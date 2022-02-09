@@ -16,7 +16,7 @@ body::before {
   position: absolute;
   right: 0;
   top: 0;
-  background-image: url(/images/bg-top.svg);
+  background-image: url(../images/bg-top.svg);
   width: 50%;
   float: right;
   height: 100%;
@@ -30,7 +30,7 @@ body::after {
   position: absolute;
   left: 0;
   bottom: 0;
-  background-image: url(/images/bg-bottom.svg);
+  background-image: url(../images/bg-bottom.svg);
   width: 50%;
   float: left;
   height: 100%;
@@ -78,7 +78,8 @@ body::after {
   text-indent: -9999px;
   width: 70px;
   height: 30px;
-  background: grey;
+  background-image: -webkit-gradient(linear, left top, right top, from(#a3a8f0), to(#696fdd));
+  background-image: linear-gradient(to right, #a3a8f0, #696fdd);
   display: inline-block;
   border-radius: 100px;
   position: relative;
