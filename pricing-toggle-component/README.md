@@ -13,19 +13,19 @@ Users should be able to:
 
 ### Screenshot
 
-![](./design/desktop-preview.jpg)
+![](./design/desktop-design.jpg)
 
 
 ### Links
-- Live Site URL: [Add live site URL here](https://aishwarya-dhuri.github.io/Frontend-mentor-challenges/pricing-toggle-component/index.html)
+- [Live Site URL](https://aishwarya-dhuri.github.io/Frontend-mentor-challenges/pricing-toggle-component/index.html)
 
-- Solution URL: [Add solution URL here](https://github.com/Aishwarya-Dhuri/Frontend-mentor-challenges/tree/master/pricing-toggle-component)
+- [Solution URL](https://github.com/Aishwarya-Dhuri/Frontend-mentor-challenges/tree/master/pricing-toggle-component)
 
 
 ## Author
 
 - Website - [Portfolio website](https://aishyawebportfolio.netlify.app/)
-- Linkedin - [@yourusername](https://in.linkedin.com/in/aishwarya-dhuri)
+- Linkedin - [@aishwarya-dhuri](https://in.linkedin.com/in/aishwarya-dhuri)
 - Instagram - [@miss_aishya](https://www.instagram.com/miss_aishya/)
 
 
