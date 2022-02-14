@@ -1,20 +1,20 @@
 const projects = [
 	{
-		name: 'pricing-toggle-component',
+		name: 'fylo-landing-page',
 		github:
-			'https://github.com/Aishwarya-Dhuri/Frontend-mentor-challenges/tree/master/pricing-toggle-component'
+			'https://github.com/Aishwarya-Dhuri/Frontend-mentor-challenges/tree/master/fylo-landing-page'
 	},
     {
 		name: 'Countries-RestApi-JsApp',
 		github:
 			'https://github.com/Aishwarya-Dhuri/Frontend-mentor-challenges/tree/master/Countries-RestApi-JsApp'
 	},
-	{
-		name: 'fylo-landing-page',
+	
+    {
+		name: 'pricing-toggle-component',
 		github:
-			'https://github.com/Aishwarya-Dhuri/Frontend-mentor-challenges/tree/master/Countries-RestApi-JsApp'
+			'https://github.com/Aishwarya-Dhuri/Frontend-mentor-challenges/tree/master/pricing-toggle-component'
 	},
-    
 	
 ];
 
