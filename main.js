@@ -10,7 +10,7 @@ const projects = [
 			'https://github.com/Aishwarya-Dhuri/Frontend-mentor-challenges/tree/master/Countries-RestApi-JsApp'
 	},
 	{
-		name: 'Fylo-landing-page',
+		name: 'fylo-landing-page',
 		github:
 			'https://github.com/Aishwarya-Dhuri/Frontend-mentor-challenges/tree/master/Countries-RestApi-JsApp'
 	},
