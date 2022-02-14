@@ -17,6 +17,9 @@ body{
     background-color: $bodybg;
     color: $white;
 }
+header{
+    background-color: $introemailbg;
+}
 .navbar-brand{
     img{
         width: 150px;
@@ -35,9 +38,15 @@ body{
 
 }
 .bannersec{
+    background-color: $introemailbg;
     text-align: center;
     margin-bottom: 70px;
-
+    background-image: url(../images/bg-curvy-desktop.svg);
+    background-position: 0 100%;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    z-index: 2;
+    position: relative;
     .introimg{
         width: 60%;
         margin:40px  0 50px 0;
@@ -108,6 +117,9 @@ p{
         font-size: 18px;
         color:$cyan;
         cursor: pointer;
+        i{
+            margin-left: 5px;
+        }
         &:hover{
             text-decoration: none;
         }
@@ -327,9 +339,6 @@ footer{
             display: inline-block;
             margin:0 20px 10px 0;
         }
-        .ftlist{
-
         
-        }
     }
 }
