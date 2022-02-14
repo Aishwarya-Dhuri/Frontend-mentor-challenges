@@ -9,7 +9,11 @@ const projects = [
 		github:
 			'https://github.com/Aishwarya-Dhuri/Frontend-mentor-challenges/tree/master/Countries-RestApi-JsApp'
 	},
-	
+	{
+		name: 'four-card-feature-section-master',
+		github:
+			'https://github.com/Aishwarya-Dhuri/Frontend-mentor-challenges/tree/master/four-card-feature-section-master'
+	},
     {
 		name: 'pricing-toggle-component',
 		github:
