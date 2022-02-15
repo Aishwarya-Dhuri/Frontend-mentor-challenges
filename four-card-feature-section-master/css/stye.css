@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+body {
+  background-color: #fafafa;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.fullrow {
+  max-width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+h1 {
+  color: #4c4e61;
+  padding: 20px 0;
+  font-weight: 200;
+  font-size: 34px;
+}
+
+h1 span {
+  font-weight: 600;
+}
+
+p {
+  color: #a5a5a5;
+  font-size: 15px;
+  font-weight: 200;
+}
+
+.cardsec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px;
+}
+
+.cardcol {
+  padding: 10px;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+.card {
+  background-color: #fff;
+  padding: 30px;
+  margin-bottom: 30px;
+  width: 300px;
+  -webkit-transition: -webkit-box-shadow 0.2s ease-in-out, -webkit-transform 0.35s ease-in-out;
+  transition: -webkit-box-shadow 0.2s ease-in-out, -webkit-transform 0.35s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out, transform 0.35s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out, transform 0.35s ease-in-out, -webkit-box-shadow 0.2s ease-in-out, -webkit-transform 0.35s ease-in-out;
+  -webkit-box-shadow: 0 11px 11px 0 rgba(0, 0, 0, 0.12);
+          box-shadow: 0 11px 11px 0 rgba(0, 0, 0, 0.12);
+  text-align: left;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.card.cyan {
+  border-top: 4px solid #45d3d3;
+}
+
+.card.red {
+  border-top: 4px solid #ea5353;
+}
+
+.card.orange {
+  border-top: 4px solid #fcaf4a;
+}
+
+.card.blue {
+  border-top: 4px solid #549ef2;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0 11px 11px 0 rgba(0, 0, 0, 0.16);
+          box-shadow: 0 11px 11px 0 rgba(0, 0, 0, 0.16);
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+.card .imgbox {
+  text-align: right;
+  padding: 20px 0 0 0;
+}
+
+.card p {
+  font-weight: 400;
+}
+
+@media screen and (max-width: 1024px) {
+  .card {
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .cardsec {
+    display: block;
+  }
+  .card {
+    width: auto;
+  }
+  .cardcol {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  h1 {
+    font-size: 26px;
+  }
+  p {
+    font-size: 14px;
+  }
+}
+/*# sourceMappingURL=stye.css.map */

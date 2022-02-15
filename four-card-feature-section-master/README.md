@@ -16,9 +16,9 @@ Users should be able to:
 
 
 ### Links
-- [Live Site URL](https://aishwarya-dhuri.github.io/Frontend-mentor-challenges/Countries-RestApi-JsApp/index.html)
+- [Live Site URL](https://aishwarya-dhuri.github.io/Frontend-mentor-challenges/four-card-feature-section-master/index.html)
 
-- [Solution URL](https://github.com/Aishwarya-Dhuri/Frontend-mentor-challenges/tree/master/Countries-RestApi-JsApp)
+- [Solution URL](https://github.com/Aishwarya-Dhuri/Frontend-mentor-challenges/tree/master/four-card-feature-section-master)
 
 
 ## Author
