@@ -24,6 +24,11 @@ const projects = [
 		github:
 			'https://github.com/Aishwarya-Dhuri/Frontend-mentor-challenges/tree/master/testimonials-grid-section'
 	},
+	{
+		name: 'bharatpae-teams-section',
+		github:
+			'https://github.com/Aishwarya-Dhuri/Frontend-mentor-challenges/tree/master/bharatpae-teams-section'
+	},
 	
 ];
 
