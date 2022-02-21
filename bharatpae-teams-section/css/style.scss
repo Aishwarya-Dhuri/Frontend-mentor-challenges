@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap');
+body{
+    margin:0;
+    padding:0;
+}
+h1{
+    text-align: center;
+    font-size: 48px;
+margin:0;    
+font-family: 'Poppins', sans-serif;
+}
+.hr__linee {
+    width: 60px;
+    height: 5px;
+    background: #00afcb;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    margin-top: 0;
+}
+.container{
+    max-width: 90%;
+    margin:40px  auto
+}
+.team-tiles {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.team-tile {
+    width: 23.5%;
+    margin: .75%;
+    margin-bottom: 20px;
+   .profile-snap {
+        border-radius: 12px;
+        position: relative;
+        img{
+            border-radius: 12px;
+            width: 100%;
+            object-fit: cover;
+            height: 320px;
+        }
+    }
+    .profile-info{
+        display: none;
+    }
+}
+// .profile-content {
+//     margin-top: 0;
+//     padding-bottom: 60px;
+// }
+.name{
+    font-family: 'Poppins', sans-serif;
+    margin:0 0 05px 0;
+    font-size: 22px;
+}
+.designation {
+    color: #999;
+    margin: 0 0 10px 0;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+
+}
+.team-tile .profile-content .social-icons {
+    display: flex;
+    justify-content: flex-start;
+    img{
+        width: 20px;
+        height: 20px;
+        margin: 0 10px 0 0
+
+    }
+}
