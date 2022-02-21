@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;200;300;400;500;600&display=swap');
+
+$purple:hsl(263, 55%, 52%);
+$darkgrey:hsl(217, 19%, 35%);
+$white:#fff;
+$blackishblue:hsl(219, 29%, 14%);
+$lightgrey:hsl(0, 0%, 81%);
+$bodybg:#ECF2F8;
+
+body{
+    margin:0;
+    padding:0;
+    background-color: $bodybg;
+    font-size: 14px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+.container{
+    width: 90%;
+    margin:0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding:100px 0
+}
+.leftsec{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0.75;
+}
+.rightsec{
+    flex: 0.25;
+    display: flex;
+
+}
+.top2,.bottom2{
+    display: flex;
+}
+.bottom2{
+    margin-top: 30px;
+}
+.card{
+    background-color: $white;
+    border-radius: 15px;
+    padding:30px;
+    
+    
+    &.purplecard{
+        background-color: $purple;
+        color: $white;
+    }
+    &.darkgreycard{
+        background-color: $darkgrey;
+        color: $white;
+
+    }
+    &.blackcard{
+        background-color: $blackishblue;
+        color: $white;
+
+    }
+   &.purplecard,&.blackcard{
+       flex-basis: 66.66%;
+       margin: 0 10px;
+
+   }
+   &.darkgreycard,&.whitecard{
+    flex-basis: 33.33%;
+    margin: 0 10px;
+
+   }
+    
+}
+.introsec{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+.imgbox img{
+    border-radius: 30px;
+    height: 30px;
+    width: 30px;
+    margin-right: 20px;
+}
+p.bigtext{
+    margin-bottom: 20px;
+    font-size: 24px;
+    opacity: 1;
+}
+p{
+    opacity: 0.7;
+}
+.rightsec .whitecard{
+    margin: 0 10px;
+flex-basis: 100%;
+}

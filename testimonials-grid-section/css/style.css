@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;200;300;400;500;600&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ECF2F8;
+  font-size: 14px;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 100px 0;
+}
+
+.leftsec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-flex: 0.75;
+      -ms-flex: 0.75;
+          flex: 0.75;
+}
+
+.rightsec {
+  -webkit-box-flex: 0.25;
+      -ms-flex: 0.25;
+          flex: 0.25;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.top2, .bottom2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.bottom2 {
+  margin-top: 30px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 30px;
+}
+
+.card.purplecard {
+  background-color: #7541c8;
+  color: #fff;
+}
+
+.card.darkgreycard {
+  background-color: #48556a;
+  color: #fff;
+}
+
+.card.blackcard {
+  background-color: #19212e;
+  color: #fff;
+}
+
+.card.purplecard, .card.blackcard {
+  -ms-flex-preferred-size: 66.66%;
+      flex-basis: 66.66%;
+  margin: 0 10px;
+}
+
+.card.darkgreycard, .card.whitecard {
+  -ms-flex-preferred-size: 33.33%;
+      flex-basis: 33.33%;
+  margin: 0 10px;
+}
+
+.introsec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.imgbox img {
+  border-radius: 30px;
+  height: 30px;
+  width: 30px;
+  margin-right: 20px;
+}
+
+p.bigtext {
+  margin-bottom: 20px;
+  font-size: 24px;
+  opacity: 1;
+}
+
+p {
+  opacity: 0.7;
+}
+
+.rightsec .whitecard {
+  margin: 0 10px;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+/*# sourceMappingURL=style.css.map */
