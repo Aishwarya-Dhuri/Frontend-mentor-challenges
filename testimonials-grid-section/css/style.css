@@ -119,4 +119,47 @@ p {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
 }
+
+@media screen and (max-width: 768px) {
+  .container {
+    display: initial;
+  }
+  .leftsec, .rightsec {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .leftsec .purplecard, .leftsec .darkgreycard, .leftsec .whitecard, .leftsec .blackcard {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .rightsec .whitecard {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .leftsec, .rightsec {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .top2 {
+    margin-top: 50px;
+  }
+  .bottom2 {
+    margin: 0 0 0 0;
+  }
+  .top2, .bottom2 {
+    display: initial;
+  }
+  .top2 .card, .bottom2 .card {
+    margin: 0 0 30px 0;
+  }
+  .rightsec .whitecard {
+    margin: 0;
+  }
+  .rightsec {
+    margin-bottom: 30px;
+  }
+}
 /*# sourceMappingURL=style.css.map */

@@ -19,6 +19,11 @@ const projects = [
 		github:
 			'https://github.com/Aishwarya-Dhuri/Frontend-mentor-challenges/tree/master/pricing-toggle-component'
 	},
+	{
+		name: 'testimonials-grid-section',
+		github:
+			'https://github.com/Aishwarya-Dhuri/Frontend-mentor-challenges/tree/master/testimonials-grid-section'
+	},
 	
 ];
 
