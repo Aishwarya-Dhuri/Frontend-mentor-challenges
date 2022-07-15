@@ -25,6 +25,16 @@ const projects = [
 			'https://github.com/Aishwarya-Dhuri/Frontend-mentor-challenges/tree/master/testimonials-grid-section'
 	},
 	{
+		name: 'interactive-pricing-component',
+		github:
+			'https://github.com/Aishwarya-Dhuri/Frontend-mentor-challenges/tree/master/interactive-pricing-component'
+	},
+	{
+		name: 'interactive-rating-component',
+		github:
+			'https://github.com/Aishwarya-Dhuri/Frontend-mentor-challenges/tree/master/interactive-rating-component'
+	},
+	{
 		name: 'bharatpae-teams-section',
 		github:
 			'https://github.com/Aishwarya-Dhuri/Frontend-mentor-challenges/tree/master/bharatpae-teams-section'
